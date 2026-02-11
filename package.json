@@ -1,7 +1,7 @@
 {
   "name": "@raphaellcs/json-diff",
-  "version": "1.0.0",
-  "description": "JSON 差异比较工具 - 对比两个 JSON 文件的差异",
+  "version": "2.0.0",
+  "description": "JSON 差异比较工具 - HTML 报告、合并、三路合并",
   "main": "src/index.js",
   "bin": {
     "json-diff": "./bin/cli.js"

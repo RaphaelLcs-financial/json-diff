@@ -7,12 +7,15 @@
 
 ## 🚀 功能
 
-- **精确比较**：使用 deep-diff 库进行深度比较
+- **精确比较**：深度比较 JSON 对象和数组
 - **清晰显示**：颜色高亮显示新增、删除、修改
-- **多种格式**：JSON、CSV、TXT 导出
+- **多种格式**：JSON、CSV、TXT、HTML 导出（HTML 为新功能）
 - **JSON Patch**：生成和应用标准 JSON Patch
 - **差异摘要**：统计差异数量
 - **数组支持**：处理数组差异
+- **JSON 合并**：合并两个或多个 JSON 文件（新功能）
+- **三路合并**：解决合并冲突（新功能）
+- **忽略路径**：忽略特定字段的差异（新功能）
 
 ## 📦 安装
 
@@ -218,12 +221,74 @@ json-diff patch old.json changes.patch -o new.json
 
 ## 🚧 待实现
 
-- [ ] 忽略特定字段
 - [ ] 自定义比较函数
-- [ ] 合并策略（保留 vs 覆盖）
-- [ ] 可视化差异（HTML）
+- [ ] 可视化差异（实时）
 - [ ] 支持更多格式（YAML、XML）
-- [ ] 三路合并
+
+## ✨ 新功能（v2.0.0）
+
+### HTML 报告
+
+生成美观的可视化差异报告：
+
+```bash
+json-diff file1.json file2.json -o report.html -f html
+```
+
+包含：
+- 差异摘要统计
+- 颜色编码的差异
+- 新增（绿色）、删除（红色）、修改（黄色）
+- 响应式设计
+
+### JSON 合并
+
+合并两个或多个 JSON 文件：
+
+```bash
+# 基础合并
+json-diff merge target.json source.json -o merged.json
+
+# 策略合并
+json-diff merge base.json extra.json -s merge -a merge
+
+# 深度合并多个文件
+json-diff merge base.json a.json b.json c.json --deep -o merged.json
+```
+
+合并策略：
+- `overwrite`：源值覆盖目标值（默认）
+- `preserve`：保留目标值，不覆盖
+- `merge`：递归合并对象
+
+数组合并：
+- `overwrite`：数组覆盖
+- `concatenate`：数组拼接
+- `merge`：数组合并并去重
+
+### 三路合并
+
+解决 Git 冲突或版本合并：
+
+```bash
+json-diff 3way base.json local.json remote.json
+```
+
+特性：
+- 自动检测冲突
+- 显示冲突详情
+- 非冲突字段自动合并
+- 支持多种合并策略
+
+### 忽略路径
+
+比较时忽略特定字段：
+
+```bash
+json-diff file1.json file2.json -i "metadata,timestamp,_id,traceId"
+```
+
+适用于忽略临时字段或内部字段。
 
 ## 🤝 贡献
 
