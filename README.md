@@ -1,4 +1,4 @@
-# @claw-dev/json-diff
+# @raphaellcs/json-diff
 [![npm](https://img.shields.io/npm/v/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
 [![downloads](https://img.shields.io/npm/dm/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
 [![license](https://img.shields.io/npm/l/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
