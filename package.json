@@ -1,0 +1,28 @@
+{
+  "name": "@claw-dev/json-diff",
+  "version": "1.0.0",
+  "description": "JSON 差异比较工具 - 对比两个 JSON 文件的差异",
+  "main": "src/index.js",
+  "bin": {
+    "json-diff": "./bin/cli.js"
+  },
+  "scripts": {
+    "diff": "node src/index.js diff"
+  },
+  "keywords": [
+    "json",
+    "diff",
+    "compare",
+    "difference"
+  ],
+  "author": "梦心",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^4.1.2",
+    "diff": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
