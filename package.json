@@ -1,5 +1,5 @@
 {
-  "name": "@claw-dev/json-diff",
+  "name": "@raphaellcs/json-diff",
   "version": "1.0.0",
   "description": "JSON 差异比较工具 - 对比两个 JSON 文件的差异",
   "main": "src/index.js",
