@@ -1,9 +1,15 @@
 # @raphaellcs/json-diff
-[![npm](https://img.shields.io/npm/v/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
-[![downloads](https://img.shields.io/npm/dm/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
-[![license](https://img.shields.io/npm/l/@raphaellcs/json-diff)](https://www.npmjs.com/package/@raphaellcs/json-diff)
+[![npm](https://img.shields.io/npm/v/@raphaellcs/json-diff)](https://www.npmjs.org/package/@raphaellcs/json-diff)
+[![downloads](https://img.shields.io/npm/dm/@raphaellcs/json-diff)](https://www.npmjs.org/package/@raphaellcs/json-diff)
+[![license](https://img.shields.io/npm/l/@raphaellcs/json-diff)](https://www.npmjs.org/package/@raphaellcs/json-diff)
+[![GitHub stars](https://img.shields.io/github/stars/RaphaelLcs-financial/json-diff?style=social)](https://github.com/RaphaelLcs-financial/json-diff/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/RaphaelLcs-financial/json-diff)](https://github.com/RaphaelLcs-financial/json-diff/issues)
 
-> JSON 差异比较工具 - 对比两个 JSON 文件的差异
+> JSON 差异比较工具 - HTML 报告、JSON 合并、三路合并
+
+## ⭐ 赞助
+
+如果这个工具对你有帮助，请给个 Star ⭐️ 或者[赞助我](https://github.com/sponsors/RaphaelLcs-financial)！
 
 ## 🚀 功能
 
